@@ -1,0 +1,22 @@
+ Correlation Recorder
+ 1.Open Apache Jmeter
+ Test Plan-> Non Test Elements ->Correlation Recorder
+ 2. For Windows: Laptop Settings-> Change Proxy Settings
+ Automatically detect settings: ON
+ Use setup script: OFF
+ Use a proxy server: ON
+ Address: http://localhost
+ Port:<Same as in Correlation Recorder tab>
+ 3.Open Firefox
+ Options->Privacy & Security (Scroll down)-> Certificates
+ View Certificates-> Import-> apache-jmeter/bin->ApacheJMeterTemporaryRootCA.crt (Security Certificate)
+ 4. Test Plan-> Add-> Threads -> Thread Group
+ 5. Correlation Recorder
+ Test Plan Creation -Target Controller: Test Plan> Thread Group
+ Requests Filtering- Add if any and click on 'Add suggested Excludes'
+ Correlation Rules- define the Regular Expression (Regex)
+ 6. Save
+ 7. Correlation Recorder: Click Start
+ 8. Open Firefox and access whatever has to be recorded.
+ 9. Click Stop
+ You will see all your steps have been recorded and will appear under 'Thread Group'
