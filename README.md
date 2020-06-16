@@ -10,5 +10,7 @@ https://jmeter-plugins.org/install/Install/
 put it into lib/ext directory, then restart JMeter.
 
 Recording tests on UI
-1. Using Blazemeter
-2. Directly from
+1. Using Blazemeter plugin
+2. Directly from jmeter using options->plugin manager-> correlation recorder
+
+
