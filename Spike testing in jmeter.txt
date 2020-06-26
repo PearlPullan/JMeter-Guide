@@ -1,0 +1,11 @@
+SPIKE TESTING USING JMETER
+
+Use Syncronizing timer in JMETER
+Wherever added, a particular request is hit concurrently as per the given number of users then moves to next step.
+User number should be given in Thread Group and Syncronizing timer module.
+So, it increases the load of users doing the same thing at a particular time.
+Usage of timeout in Syncronizing timer module-
+If you don't get given number of users after the timeout, then it moves to the next request
+It can be given under a particular request or common to the thread group
+
+https://www.youtube.com/watch?v=Zh-vm08_2fM
